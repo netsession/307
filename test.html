@@ -1,1 +1,64 @@
-testg
+
+<!DOCTYPE html>
+<head>
+   <meta charset="utf-8">
+   <title>Anmelde Formular für Neukunden TOPOMEDICS AG</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <style>
+      form{max-width: 620px;margin: 0 auto;}
+      label{display: block;}
+   </style>
+</head>
+<body>
+   <form action="#" id="form" method="post">
+      <h2>Neukunden TOPOMEDICS AG</h2>
+      <fieldset id="kontakt">
+         <legend>Persönliche Daten</legend>
+         <label for="name">Name: *  </label>
+         <input type="text" name="name" id="name">
+         <label for="vorname">Vorname: *  </label>
+         <input type="text" name="vorname" id="vorname">
+         <label for="adresse">Adresse: </label>
+         <input type="text" name="adresse" id="adresse">
+         <label for="plz">Postleitzahl: </label>
+         <input type="text" name="plz" id="plz">
+         <label for="ort">Ort: </label>
+         <input type="text" name="ort" id="ort">
+         <label for="email">E-Mail: </label>
+         <input type="text" name="email" id="email">
+         <label for="telefon">Telefon: </label>
+         <input type="text" name="telefon" id="telefon">
+      </fieldset>
+      <fieldset id="sortiment">
+         <legend>Sortiment:</legend>
+         <select name="sortiment" size="4" multiple="multiple">
+            <option value="ok">Optische Kohärenztomographie</option>
+            <option value="so">Sonografie</option>
+            <option value="ma">Magnetresonanztomographie</option>
+            <option value="co">Computertomographie</option>
+            <option value="sz">Szintigraphie</option>
+            <option value="po">Positions-Emissions-Tomographie</option>
+         </select>
+      </fieldset>
+      <fieldset id="branche">
+         <legend>Branche</legend>
+         <label><input class="radio-inline" type="radio" name="branche" value="krankenhaus">
+         Krankenhaus</label>
+         <label><input class="radio-inline" type="radio" name="branche" value="forschung">
+         Forschung</label>
+         <label><input class="radio-inline" type="radio" name="branche" value="bildung">
+         Bildung</label>
+         <label><input class="radio-inline" type="radio" name="branche" value="endkunden">
+         Endkunden</label>
+      </fieldset>
+      <fieldset id="infos">
+         <legend>Infos:</legend>
+         <label for="mitteilung">Nachricht:</label>
+         <textarea name="mitteilung" id="mitteilung"></textarea>
+         <label><input type="checkbox" name="news" checked>
+         Newsletter</label>
+         <button type="submit">Senden</button>
+      </fieldset>
+   </form>
+</body>
+</html>
