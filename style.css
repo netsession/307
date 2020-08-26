@@ -15,7 +15,10 @@ label {
   clear: both;
   margin-bottom: 18px;
 }
-input {
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"]{
   float: left;
   width: 50%;
   border: none;
